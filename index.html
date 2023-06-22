@@ -1,40 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <style>
-    .body {
-      background-image: url("");
-      /* Full height */
-      height: 100%;
-      /* Center and scale the image nicely */
-      background-position: 20;
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
-    .styleText {
-      text-align: center;
-    }
-  </style>
-  <body class="body">
-    <h2 class="styleText">My Portfolio</h2>
-    <p style="text-align: center; margin-right: 5px">
-      <a href="/index.html">Home</a>
-      |
-      <a href="/exp.html" style="margin-left: 5px">Experience</a>
-      |
-      <a style="margin-left: 5px" href="/contact.html">Contact Me</a>
-    </p>
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc9nArY_40IgEMGneE2urAY2T9fac70oczhSQqprH9RuiMfTAzwj0bz4rYYg-j984tS6k"
-      style="margin-left: auto; display: block; margin-right: auto"
-    />
-    <h3 class="styleText">Kong Kanjai</h3>
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="/index.html">Home</a>
+        <a href="/exp.html">Experience</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+      >&#9776; open</span
+    >
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+  </body>
+  <body class="BG">
     <div>
-      <p class="styleText">Hi my name is Kong. Nice to meet you! นะไอ้ฉองงงง</p>
+      <div
+        class="glow"
+        style="font-size: 30px; text-align: center; color: aliceblue"
+      >
+        Welcome to My Portfolio
+      </div>
+      <br />
+      <img
+        src="https://scontent.fbkk22-3.fna.fbcdn.net/v/t39.30808-1/270226726_1252380545242185_1717286419747866041_n.jpg?stp=dst-jpg_p240x240&_nc_cat=111&ccb=1-7&_nc_sid=7206a8&_nc_eui2=AeFqdZK7Lh-eoterUAtfqHKt_kCMC9oVXXv-QIwL2hVdexzEHHTLIELJ4lsItkE5ml029x7eeDQulvJ-5g7YtBeH&_nc_ohc=F7GW2NNDUqcAX_yjQvm&_nc_ht=scontent.fbkk22-3.fna&oh=00_AfDMQFsjBIMZxXqCGpkF_hzNP3pAA2u5tddLWQukY_haLw&oe=64982DD1"
+        style="margin-left: auto; display: block; margin-right: auto"
+      />
+      <h3 class="styleText ; glow2">Kong Kanjai</h3>
+      <div>
+        <p class="styleText">
+          Good day everyone, I'm Kong Kanjai, a 19-year-old student from Chiang
+          Mai University,
+        </p>
+
+        <p class="styleText">
+          specializing in Computer Engineering. When I'm not focused on my
+          studies, you can often find me playing basketball,
+        </p>
+
+        <p class="styleText">
+          immersing myself in the world of gaming, or strumming my guitar.
+        </p>
+
+        <p class="styleText">
+          I'm passionate about these activities as they allow me to stay active,
+          exercise my problem-solving skills, and express my creativity.
+        </p>
+
+        <p class="styleText">
+          Thank you for your time, and I'm excited to connect with all of you!
+        </p>
+      </div>
     </div>
   </body>
 </html>

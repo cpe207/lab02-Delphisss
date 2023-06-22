@@ -1,35 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <style>
-    .body {
-      background-color: aqua;
-    }
-    .styleText {
-      text-align: center;
-    }
-  </style>
-  <body class="body">
-    <h2 class="styleText">My Portfolio</h2>
-    <p style="text-align: center; margin-right: 5px">
-      <a href="/index.html">Home</a>
-      |
-      <a href="/exp.html" style="margin-left: 5px">Experience</a>
-      |
-      <a style="margin-left: 5px" href="/contact.html">Contact Me</a>
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="/index.html">Home</a>
+        <a href="/exp.html">Experience</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+      >&#9776; open</span
+    >
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+  </body>
+  <body class="BG">
+    <div
+    class="glow"
+    style="font-size: 30px; text-align: center; color: aliceblue"
+  >
+    Contact
+    </div>
+
+  </div>
+  <body>
+    <p style="text-align: center; font-size: 20px ; color: aliceblue ;" class="glow2">
+      E-mail : <a href="mailto:Kong_K@cmu.ac.th"> Kong_K@cmu.ac.th </a>
+      <br>
+      Tel : 084-004-0480
     </p>
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc9nArY_40IgEMGneE2urAY2T9fac70oczhSQqprH9RuiMfTAzwj0bz4rYYg-j984tS6k"
-      style="margin-left: auto; display: block; margin-right: auto"
-    />
-    <h3 class="styleText">Contact</h3>
-    <p class="styleText">IG: kongkongkongkongkong_</p>
-    <p class="styleText">FB: K'Kong</p>
-    <p class="styleText">Line: Hellworker</p>
-    <p class="styleText">Phone: 0840040480</p>
+    <div>
+      <br />
+      <img
+        src="https://i.gifer.com/PeoV.gif"
+        style="margin-left: auto; display: block; margin-right: auto"
+      />
+    </div>
+  </body>
   </body>
 </html>

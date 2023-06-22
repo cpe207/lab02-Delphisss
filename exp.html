@@ -1,35 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <style>
-    .body {
-      background-color: aqua;
-    }
-    .styleText {
-      text-align: center;
-    }
-  </style>
-  <body class="body">
-    <h2 class="styleText">My Portfolio</h2>
-    <p style="text-align: center; margin-right: 5px">
-      <a href="/index.html">Home</a>
-      |
-      <a href="/exp.html" style="margin-left: 5px">Experience</a>
-      |
-      <a style="margin-left: 5px" href="/contact.html">Contact Me</a>
-    </p>
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc9nArY_40IgEMGneE2urAY2T9fac70oczhSQqprH9RuiMfTAzwj0bz4rYYg-j984tS6k"
-      style="margin-left: auto; display: block; margin-right: auto"
-    />
-    <h3 class="styleText">Contact</h3>
-    <p class="styleText">IG: kongkongkongkongkong_</p>
-    <p class="styleText">FB: K'Kong</p>
-    <p class="styleText">Line: Hellworker</p>
-    <p class="styleText">Phone: 0840040480</p>
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="/index.html">Home</a>
+        <a href="/exp.html">Experience</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+      >&#9776; open</span
+    >
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+  </body>
+  <body class="BG">
+    <div>
+      <div
+        class="glow"
+        style="font-size: 30px; text-align: center; color: aliceblue"
+      >
+        Experience
+      </div>
+      <div>
+        <div class="danger">
+          <p>
+            <strong>Success!</strong> Highlights of my achievements include.
+          </p>
+        </div>
+
+        <div class="success">
+          <p>
+            <strong>Success!</strong> 2019 Provincial Basketball Championship
+            winner.
+          </p>
+        </div>
+
+        <div class="info">
+          <p>
+            <strong>Success!</strong> International Under 18 Chess Tournament
+            champion.
+          </p>
+        </div>
+
+        <div class="warning">
+          <p>
+            <strong>Success!</strong> Recipient of a prestigious Faculty of
+            Engineering scholarship from Chiang Mai University.
+          </p>
+        </div>
+        <p class="styleText ; glow2">
+          These accomplishments demonstrate my prowess in both sports and
+          academics, reflecting my dedication, strategic thinking, and
+          commitment to excellence.
+        </p>
+      </div>
+      <br />
+      <img
+        src="https://i.gifer.com/REWi.gif"
+        style="margin-left: auto; display: block; margin-right: auto"
+      />
+    </div>
   </body>
 </html>
